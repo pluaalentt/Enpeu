@@ -3,22 +3,26 @@
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary-color);
   color: white;
-  padding: 80px 0;
+  padding: 100px 0 80px;
   text-align: center;
 }
 
 .page-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .page-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   max-width: 700px;
   margin: 0 auto;
   opacity: 0.95;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .filter-section {
@@ -39,24 +43,27 @@
 }
 
 .filter-btn {
-  padding: 10px 25px;
+  padding: 12px 28px;
   background: white;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  border-radius: 25px;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 24px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .filter-btn:hover {
-  background: var(--primary-color);
-  color: white;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: white;
+  border-color: var(--secondary-color);
 }
 
 .proyecto-card {
@@ -64,13 +71,16 @@
   flex-direction: column;
 }
 
-.proyecto-categoria {
-  background: rgba(255,255,255,0.3);
-  padding: 8px 16px;
+.proyecto-categoria-tag {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  padding: 6px 16px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: capitalize;
-  backdrop-filter: blur(10px);
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 .proyecto-meta {

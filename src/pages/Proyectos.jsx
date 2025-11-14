@@ -12,7 +12,7 @@ function Proyectos() {
       año: 2023,
       categoria: 'cultural',
       descripcion: 'Espacio comunitario integrado que combina arte, educación y sostenibilidad. Certificación LEED Gold.',
-      color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      imagen: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80'
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ function Proyectos() {
       año: 2023,
       categoria: 'residencial',
       descripcion: 'Complejo habitacional con 120 unidades, certificación LEED Platino, paneles solares y sistemas de reciclaje de agua.',
-      color: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      imagen: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ function Proyectos() {
       año: 2022,
       categoria: 'educacional',
       descripcion: 'Centro de conocimiento con tecnología de punta, espacios colaborativos y diseño bioclimático.',
-      color: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      imagen: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&q=80'
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ function Proyectos() {
       año: 2024,
       categoria: 'comercial',
       descripcion: 'Edificio de oficinas de 30 pisos con fachada inteligente y espacios verdes en cada nivel.',
-      color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+      imagen: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80'
     },
     {
       id: 5,
@@ -48,7 +48,7 @@ function Proyectos() {
       año: 2022,
       categoria: 'cultural',
       descripcion: 'Espacio museístico con arquitectura vanguardista y salas de exposición modulares.',
-      color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+      imagen: 'https://images.unsplash.com/photo-1518005068251-37900150dfca?w=800&q=80'
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ function Proyectos() {
       año: 2023,
       categoria: 'educacional',
       descripcion: 'Complejo educativo con laboratorios, aulas interactivas y áreas verdes comunitarias.',
-      color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+      imagen: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80'
     }
   ]
 
@@ -106,13 +106,13 @@ function Proyectos() {
           <div className="grid grid-2">
             {proyectosFiltrados.map(proyecto => (
               <div key={proyecto.id} className="card proyecto-card">
-                <div 
-                  className="card-image-placeholder" 
-                  style={{background: proyecto.color}}
-                >
-                  <span className="proyecto-categoria">{proyecto.categoria}</span>
-                </div>
+                <img 
+                  src={proyecto.imagen}
+                  alt={proyecto.titulo}
+                  className="card-image"
+                />
                 <div className="card-content">
+                  <span className="proyecto-categoria-tag">{proyecto.categoria}</span>
                   <h3 className="card-title">{proyecto.titulo}</h3>
                   <div className="proyecto-meta">
                     <span className="proyecto-location">📍 {proyecto.ubicacion}</span>

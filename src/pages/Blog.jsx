@@ -9,7 +9,7 @@ function Blog() {
       autor: 'María González',
       categoria: 'Sostenibilidad',
       extracto: 'Exploramos las tendencias emergentes en arquitectura verde y cómo están transformando el diseño urbano contemporáneo.',
-      color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      imagen: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80',
       tiempo: '5 min lectura'
     },
     {
@@ -19,7 +19,7 @@ function Blog() {
       autor: 'Carlos Mendoza',
       categoria: 'Diseño',
       extracto: 'Cómo adaptar principios bioclimáticos a las condiciones específicas del clima tropical y subtropical latinoamericano.',
-      color: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      imagen: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
       tiempo: '7 min lectura'
     },
     {
@@ -29,7 +29,7 @@ function Blog() {
       autor: 'Ana Martínez',
       categoria: 'Tecnología',
       extracto: 'La metodología BIM está cambiando la forma en que los equipos internacionales colaboran en proyectos arquitectónicos complejos.',
-      color: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      imagen: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
       tiempo: '6 min lectura'
     },
     {
@@ -39,7 +39,7 @@ function Blog() {
       autor: 'Pedro Silva',
       categoria: 'Innovación',
       extracto: 'Descubre los nuevos materiales ecológicos que están revolucionando la industria de la construcción.',
-      color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+      imagen: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
       tiempo: '8 min lectura'
     },
     {
@@ -49,7 +49,7 @@ function Blog() {
       autor: 'Laura Rodríguez',
       categoria: 'Social',
       extracto: 'La importancia de involucrar a las comunidades en el proceso de diseño arquitectónico desde las primeras etapas.',
-      color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+      imagen: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80',
       tiempo: '6 min lectura'
     },
     {
@@ -59,7 +59,7 @@ function Blog() {
       autor: 'Diego López',
       categoria: 'Urbanismo',
       extracto: 'Cómo los arquitectos están integrando tecnología IoT y datos en el diseño de espacios urbanos del futuro.',
-      color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+      imagen: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80',
       tiempo: '7 min lectura'
     }
   ]
@@ -80,13 +80,13 @@ function Blog() {
           <div className="blog-grid">
             {posts.map(post => (
               <article key={post.id} className="blog-card">
-                <div 
+                <img 
+                  src={post.imagen}
+                  alt={post.titulo}
                   className="blog-image"
-                  style={{background: post.color}}
-                >
-                  <span className="blog-categoria">{post.categoria}</span>
-                </div>
+                />
                 <div className="blog-content">
+                  <span className="blog-categoria">{post.categoria}</span>
                   <div className="blog-meta">
                     <span className="blog-fecha">📅 {post.fecha}</span>
                     <span className="blog-tiempo">⏱️ {post.tiempo}</span>

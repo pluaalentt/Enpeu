@@ -5,18 +5,24 @@ function Home() {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-overlay">
-          <div className="container">
-            <div className="hero-content">
-              <h1 className="hero-title">Diseñando el Futuro de la Arquitectura</h1>
-              <p className="hero-subtitle">
-                Cooperativa internacional comprometida con la excelencia arquitectónica, 
-                la sostenibilidad y la innovación en cada proyecto.
-              </p>
-              <div className="hero-buttons">
-                <a href="/proyectos" className="btn btn-primary">Ver Proyectos</a>
-                <a href="/contacto" className="btn">Contáctanos</a>
-              </div>
+        <div className="hero-image-container">
+          <img 
+            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=80" 
+            alt="Arquitectura moderna"
+            className="hero-background"
+          />
+          <div className="hero-overlay"></div>
+        </div>
+        <div className="container">
+          <div className="hero-content">
+            <h1 className="hero-title">Diseñando el Futuro de la Arquitectura</h1>
+            <p className="hero-subtitle">
+              Cooperativa internacional comprometida con la excelencia arquitectónica, 
+              la sostenibilidad y la innovación en cada proyecto.
+            </p>
+            <div className="hero-buttons">
+              <a href="/proyectos" className="btn btn-primary">Ver Proyectos</a>
+              <a href="/contacto" className="btn btn-outline">Contáctanos</a>
             </div>
           </div>
         </div>
@@ -59,7 +65,11 @@ function Home() {
           </p>
           <div className="grid grid-3">
             <div className="card">
-              <div className="card-image-placeholder" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}></div>
+              <img 
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" 
+                alt="Centro Cultural Medellín"
+                className="card-image"
+              />
               <div className="card-content">
                 <h3 className="card-title">Centro Cultural Medellín</h3>
                 <p className="card-text">
@@ -69,7 +79,11 @@ function Home() {
               </div>
             </div>
             <div className="card">
-              <div className="card-image-placeholder" style={{background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}></div>
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" 
+                alt="Eco-Residencial Barcelona"
+                className="card-image"
+              />
               <div className="card-content">
                 <h3 className="card-title">Eco-Residencial Barcelona</h3>
                 <p className="card-text">
@@ -79,7 +93,11 @@ function Home() {
               </div>
             </div>
             <div className="card">
-              <div className="card-image-placeholder" style={{background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}></div>
+              <img 
+                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&q=80" 
+                alt="Biblioteca Nairobi"
+                className="card-image"
+              />
               <div className="card-content">
                 <h3 className="card-title">Biblioteca Nairobi</h3>
                 <p className="card-text">

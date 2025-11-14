@@ -6,55 +6,55 @@ function Galeria() {
       id: 1,
       titulo: 'Centro Cultural Medellín - Exterior',
       proyecto: 'Centro Cultural Medellín',
-      color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      imagen: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80'
     },
     {
       id: 2,
       titulo: 'Eco-Residencial Barcelona - Vista Aérea',
       proyecto: 'Eco-Residencial Barcelona',
-      color: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      imagen: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'
     },
     {
       id: 3,
       titulo: 'Biblioteca Nairobi - Interior',
       proyecto: 'Biblioteca Pública Nairobi',
-      color: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      imagen: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&q=80'
     },
     {
       id: 4,
       titulo: 'Torre São Paulo - Fachada',
       proyecto: 'Torre Corporativa São Paulo',
-      color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+      imagen: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80'
     },
     {
       id: 5,
       titulo: 'Museo CDMX - Hall Principal',
       proyecto: 'Museo de Arte Contemporáneo',
-      color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+      imagen: 'https://images.unsplash.com/photo-1518005068251-37900150dfca?w=800&q=80'
     },
     {
       id: 6,
       titulo: 'Campus Buenos Aires - Plaza Central',
       proyecto: 'Campus Universitario Sustentable',
-      color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+      imagen: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80'
     },
     {
       id: 7,
       titulo: 'Detalle Arquitectónico - Barcelona',
       proyecto: 'Eco-Residencial Barcelona',
-      color: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
+      imagen: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80'
     },
     {
       id: 8,
       titulo: 'Espacio Público - Medellín',
       proyecto: 'Centro Cultural Medellín',
-      color: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)'
+      imagen: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80'
     },
     {
       id: 9,
       titulo: 'Biblioteca - Zona de Lectura',
       proyecto: 'Biblioteca Pública Nairobi',
-      color: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
+      imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80'
     }
   ]
 
@@ -74,14 +74,14 @@ function Galeria() {
           <div className="galeria-grid">
             {imagenes.map(imagen => (
               <div key={imagen.id} className="galeria-item">
-                <div 
+                <img 
+                  src={imagen.imagen}
+                  alt={imagen.titulo}
                   className="galeria-image"
-                  style={{background: imagen.color}}
-                >
-                  <div className="galeria-overlay">
-                    <h3>{imagen.titulo}</h3>
-                    <p>{imagen.proyecto}</p>
-                  </div>
+                />
+                <div className="galeria-overlay">
+                  <h3>{imagen.titulo}</h3>
+                  <p>{imagen.proyecto}</p>
                 </div>
               </div>
             ))}
