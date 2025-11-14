@@ -185,3 +185,29 @@
     font-size: 2.5rem;
   }
 }
+.team-section {
+  background: white;
+}
+
+.team-image-container {
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-description {
+  max-width: 700px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}

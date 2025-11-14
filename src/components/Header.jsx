@@ -7,8 +7,7 @@ function Header() {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <h1>ENPEU</h1>
-            <p className="logo-subtitle">Cooperativa Internacional de Arquitectura</p>
+            <img src="/logo-enpeu.png" alt="Enpeu" className="logo-image" />
           </Link>
           <nav className="nav">
             <Link to="/" className="nav-link">Inicio</Link>

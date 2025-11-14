@@ -19,7 +19,6 @@ function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Aquí iría la lógica para enviar el formulario
     alert('Gracias por contactarnos. Te responderemos pronto.')
     setFormData({
       nombre: '',
@@ -56,7 +55,7 @@ function Contacto() {
                   <div className="info-icon">📍</div>
                   <div className="info-content">
                     <h3>Oficina Principal</h3>
-                    <p>Passeig de Gràcia, 123<br/>08008 Barcelona, España</p>
+                    <p>C/ de Cavanilles, 16<br/>El Pla del Real, 46010 València, España</p>
                   </div>
                 </div>
 
@@ -64,15 +63,15 @@ function Contacto() {
                   <div className="info-icon">📧</div>
                   <div className="info-content">
                     <h3>Email</h3>
-                    <p>info@enpeu.org<br/>proyectos@enpeu.org</p>
+                    <p><a href="mailto:info@enpeu.org">info@enpeu.org</a></p>
                   </div>
                 </div>
 
                 <div className="info-item">
-                  <div className="info-icon">📞</div>
+                  <div className="info-icon">🌐</div>
                   <div className="info-content">
-                    <h3>Teléfono</h3>
-                    <p>+34 900 123 456<br/>+34 900 123 457</p>
+                    <h3>Redes Sociales</h3>
+                    <p>Síguenos en Facebook y LinkedIn</p>
                   </div>
                 </div>
 
@@ -80,19 +79,14 @@ function Contacto() {
                   <div className="info-icon">🕐</div>
                   <div className="info-content">
                     <h3>Horario</h3>
-                    <p>Lunes - Viernes: 9:00 - 18:00<br/>Sábado: 10:00 - 14:00</p>
+                    <p>Lunes - Viernes: 9:00 - 18:00</p>
                   </div>
                 </div>
               </div>
 
               <div className="oficinas-internacionales">
-                <h3>Oficinas Internacionales</h3>
-                <ul>
-                  <li><strong>Buenos Aires:</strong> Av. Corrientes 1234</li>
-                  <li><strong>Ciudad de México:</strong> Reforma 567</li>
-                  <li><strong>São Paulo:</strong> Avenida Paulista 890</li>
-                  <li><strong>Bogotá:</strong> Carrera 7 #45-23</li>
-                </ul>
+                <h3>Red Internacional</h3>
+                <p>Somos una cooperativa internacional de arquitectura con presencia en múltiples países.</p>
               </div>
             </div>
 
@@ -182,7 +176,7 @@ function Contacto() {
         <div className="container">
           <h2 className="section-title">Nuestra Ubicación</h2>
           <div className="mapa-placeholder">
-            <p>📍 Passeig de Gràcia, 123, Barcelona, España</p>
+            <p>📍 C/ de Cavanilles, 16, El Pla del Real, 46010 València, España</p>
             <p style={{fontSize: '0.9rem', opacity: 0.8, marginTop: '10px'}}>
               Integración con Google Maps disponible
             </p>
