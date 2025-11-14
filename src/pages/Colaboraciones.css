@@ -1,0 +1,112 @@
+.colaboraciones-page {
+  width: 100%;
+}
+
+.colaboracion-card {
+  height: 100%;
+}
+
+.colaboracion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.colaboracion-tipo {
+  background: var(--secondary-color);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.colaboracion-proyectos {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.colaboracion-proyectos strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.colaboracion-proyectos ul {
+  margin-left: 20px;
+}
+
+.colaboracion-proyectos li {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.colaboracion-footer {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.colaboracion-year {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.socios-section {
+  background: #f8f9fa;
+}
+
+.socio-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.socio-card:hover {
+  transform: translateY(-5px);
+}
+
+.socio-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.socio-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.socio-pais {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.socio-especialidad {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.cta-section {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .colaboracion-header {
+    flex-direction: column;
+  }
+  
+  .colaboracion-tipo {
+    align-self: flex-start;
+  }
+}
