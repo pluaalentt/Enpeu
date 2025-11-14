@@ -12,7 +12,9 @@
   },
   "globalHeaders": {
     "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:",
-    "cache-control": "must-revalidate, max-age=3600"
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0"
   },
   "mimeTypes": {
     ".json": "application/json",
