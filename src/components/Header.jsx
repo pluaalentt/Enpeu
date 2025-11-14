@@ -9,9 +9,11 @@ function Header() {
           <img src="/logo-enpeu.png" alt="Enpeu" className="logo-image" />
         </Link>
         <nav className="nav">
+          <Link to="/" className="nav-link">Inicio</Link>
           <Link to="/proyectos" className="nav-link">Proyectos</Link>
           <Link to="/galeria" className="nav-link">Galería</Link>
           <Link to="/colaboraciones" className="nav-link">Colaboraciones</Link>
+          <Link to="/blog" className="nav-link">Blog</Link>
           <Link to="/contacto" className="nav-link">Contacto</Link>
         </nav>
       </div>
